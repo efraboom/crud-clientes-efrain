@@ -24,7 +24,7 @@ const EditarForm = (props) => {
         >
             <h2>Actualizar cliente</h2>
             <label htmlFor='cedula'>Cédula</label><br />
-            <input className='input' onChange={handleChange} type="number" name="cedula" id='cedula' value={cliente.cedula} placeholder='Cédula' /><br />
+            <input className='input' onChange={handleChange} type="number" name="cedula" id='cedula' value={cliente.cedula} placeholder='Nº de Cédula' /><br />
 
             <label htmlFor="nombre">Nombre</label><br />
             <input className='input' onChange={handleChange} type="text" name="nombre" id="nombre" value={cliente.nombre} placeholder='Nombre' /><br />
