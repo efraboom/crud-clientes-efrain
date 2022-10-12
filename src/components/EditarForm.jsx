@@ -44,6 +44,7 @@ const EditarForm = (props) => {
                     className='btn-update btn-cancelar'
                     onClick={() => props.setEditando(false)}
                 >Cancelar</button>
+                
             </div>
         </form>
     )

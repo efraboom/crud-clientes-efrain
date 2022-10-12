@@ -29,11 +29,14 @@ h2{
     grid-template-columns: 2fr 4fr;
     gap: 4rem;
 }
-
-/* ============= Formulario ============== */
-.flex-form{
-
+@media only screen and (max-width: 768px) {
+    .flex-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
+/* ============= Formulario ============== */
 
 .formulario h2{
     font-weight: 600;
@@ -81,14 +84,16 @@ h2{
 }
 
 .actualizar-botones{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;    
-    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .btn-update{
-    padding: 1rem 3rem;
+    padding: 1rem;
     width: 100%;
     margin-bottom: 1.5rem;
     border-radius: .5rem;

@@ -1,0 +1,66 @@
+:root{
+    --azul: #1746A2;
+    --azul-claro: #5F9DF7;
+    --fondo-claro: #e1edff;
+    --naranja: #FF731D;
+    --rojo: #ff1515;
+    --fondo: #FFF7E9;
+}
+
+.main-table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: solid 2px var(--azul);
+}
+.table-head{
+    background-color: var(--azul);
+    text-transform: uppercase
+}
+
+.column-th{
+    color: var(--fondo);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+td,th{
+    padding: 2rem;
+}
+.registros:nth-child(even){
+    background-color: var(--fondo-claro);
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.btn-small{
+    padding: 1rem 3rem;
+    width: 100%;
+    border-radius: .5rem;
+    border: none;
+    color: var(--fondo);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-small i{
+    font-size: 1.6rem;
+}
+.btn-content{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.btn-eliminar{
+    background-color: var(--rojo);
+}
+.btn-editar{
+    background-color: var(--azul);
+}
+.tr-vacio td{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--naranja);
+}

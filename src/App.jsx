@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import TablaDeClientes from './components/TablaDeClientes'
 import './css/app.css'
 import FormularioAgregar from './components/FormularioAgregar'
@@ -18,6 +18,12 @@ const estadoInicial = {
 
 function App() {
   const [clientes, setClientes] = useState(inicialClientes);
+
+  /* Agregando Session Storage */
+
+  useEffect(() => {
+    sessionStorage.setItem('Clientes', JSON.stringify(clientes));
+  }, [clientes]);
 
   /* Saber si estamos editando o no */
   const [editando, setEditando] = useState(false);
