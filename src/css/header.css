@@ -1,0 +1,20 @@
+:root{
+    --azul-principa: #1746A2;
+    --azul-claro: #5F9DF7;
+    --naranja: #FF731D;
+    --fondo: #FFF7E9;
+  
+}
+  
+
+.header{
+    background-color: var(--azul-principa);
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+}
+.header h1{
+    text-align: center;
+    color: var(--fondo);
+    font-weight: 800;
+    font-size: 3.5rem;
+}

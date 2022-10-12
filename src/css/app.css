@@ -1,0 +1,107 @@
+:root{
+    --azul: #1746A2;
+    --azul-claro: #5F9DF7;
+    --fondo-claro: #e1edff;
+    --naranja: #FF731D;
+    --fondo: #FFF7E9;
+}
+
+/* Global */
+h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.lista h2{
+    margin-bottom: 2rem;
+}
+  
+.contenedor{
+    margin: 0 5%;
+}
+@media only screen and (max-width: 768px) {
+    .contenedor{
+        margin: 0 5%;
+    }
+}
+
+.flex-container{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 4rem;
+}
+
+/* ============= Formulario ============== */
+.flex-form{
+
+}
+
+.formulario h2{
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.formulario label{
+    font-weight: 600;
+    text-align: center;
+}
+.formulario{
+    background:var(--fondo-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px var(--naranja);
+    border-radius: 1rem;
+}
+.input{
+    width: 90%;
+    padding: .8rem 0;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 600;
+    border: solid 2px var(--azul-claro) ;
+}
+.input::-webkit-input-placeholder{
+    padding-left: 1rem;
+}
+
+.btn{
+    padding: 1rem 3rem;
+    width: 90%;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--azul);
+    color: var(--fondo);
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.actualizar-botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;    
+    margin-bottom: 1.5rem;
+}
+
+.btn-update{
+    padding: 1rem 3rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    color: var(--fondo);
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-confirmar{
+    background-color: var(--azul);
+}
+.btn-cancelar{
+    background-color: var(--naranja);
+}
