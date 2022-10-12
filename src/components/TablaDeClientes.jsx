@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/tablaClientes.css'
-import Swal from 'sweetalert2'
 
 const TablaDeClientes = ({clientes, eliminarCliente, editarRegistro}) => {
   return (
